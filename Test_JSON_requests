@@ -1,0 +1,11 @@
+{ "action": "plus", "argument_1": 1, "argument_2": 2 }
+{ "action": "plus", "argument_1": 1.1, "argument_2": 2 }
+{ "action": "/", "argument_1": 4, "argument_2": 0.0 }
+{ "action": "multiply", "argument_1": 1.1, "argument_2": 2 }
+{ "action": "-", "argument_1": 1.1, "argument_2": 3.1 }
+{ "action": "minus", "argument_1": -1.1, "argument_2": 3.1 }
+{ "action": "plus", "argument_1": -1.1, "argument_2": -3 }
+{ "action": "", "argument_1": -1.1, "argument_2": -3 }
+{ "action": "*", "argument_1": 5, "argument_2": 114 }
+
+
