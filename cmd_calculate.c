@@ -68,7 +68,7 @@ int cmd_calc_processing(const char* request) {
 
 int parse_calc_params(const char* json_request, char** action,
                         typed_variable* arg1, typed_variable* arg2) {
-printf("in parse func: %s\n", json_request);  
+ 
     struct json_object* raw_json_obj = json_tokener_parse(json_request);
     if (raw_json_obj == NULL) {
         printf("Error parsing JSON\n");
