@@ -63,12 +63,12 @@ int cmd_calc_processing(const char* request) {
         return INCORRECT_VALUE;
     }
 
-        safe_free(action);
-        safe_free(arg_1.data);
-        safe_free(arg_2.data);
-        safe_free(result.data);
-        safe_free(response);
-        safe_free(error_response);
+    safe_free(action);
+    safe_free(arg_1.data);
+    safe_free(arg_2.data);
+    safe_free(result.data);
+    safe_free(response);
+    safe_free(error_response);
 
     return CODE_OF_SUCCESS;
 }
