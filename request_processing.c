@@ -4,7 +4,7 @@ struct sockaddr_nl sender_addr = {0};
 
 void server_request_processing() {
     while (true) {
-        char* received_message;
+        char* received_message = NULL;
 
         message_command message_cmd = receive_gnl_message(&received_message, gennl_socket);
         if (message_cmd == CMD_CALCULATE) {
@@ -164,6 +164,7 @@ message_command receive_gnl_message(char** received_message, int listen_socket) 
     *received_message = (char*)malloc(strlen(buf_for_message) + 1);
     if (*received_message == NULL) {
         perror("Can't allocate memory for received message with malloc()");
+        safe_free(nlh);
         return INCORRECT_VALUE;
     }
 
