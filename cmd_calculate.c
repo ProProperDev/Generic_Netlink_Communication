@@ -234,11 +234,14 @@ __attribute__((warn_unused_result)) char* compose_cmd_calc_error_answer(char* er
     char* response = malloc(answer_string_size);
     if (response == NULL) {
         perror("Can't allocate memory for response with malloc()");
+        json_object_put(json_obj_answer);
         return NULL;
     }
     memset(response, '\0', answer_string_size);
 
     strcpy(response, json_object_to_json_string(json_obj_answer));
+
+    json_object_put(json_obj_answer);
 
     return response;
 }
@@ -261,11 +264,14 @@ __attribute__((warn_unused_result)) char* compose_cmd_calc_answer(const typed_va
     char* response = malloc(answer_string_size);
     if (response == NULL) {
         perror("Can't allocate memory for response with malloc()");
+        json_object_put(json_obj_answer);
         return NULL;
     }
     memset(response, '\0', answer_string_size);
 
     strcpy(response, json_object_to_json_string(json_obj_answer));
+
+    json_object_put(json_obj_answer);
 
     return response;
 }
