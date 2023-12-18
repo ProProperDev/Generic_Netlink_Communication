@@ -1,5 +1,7 @@
 #include "server_init.h"
 
+int gennl_socket;
+
 void gennl_server_init() {
     if (create_and_bind_server_socket() != CODE_OF_SUCCESS) {
         printf("Server initialization FAILED!\n");

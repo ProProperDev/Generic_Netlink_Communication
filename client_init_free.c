@@ -1,5 +1,7 @@
 #include "client_init_free.h"
 
+int client_gennl_socket;
+
 void gennl_client_init() {
     if (create_and_bind_client_socket() != CODE_OF_SUCCESS) {
         printf("Client initialization FAILED!\n");

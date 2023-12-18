@@ -15,7 +15,13 @@
 #define SERV_INFOFILE_SIZE (sizeof(pid_t))
 
 static struct sockaddr_nl server_addr = {0};
-int gennl_socket;
+
+#ifndef GENNL_SOCKET_H
+#define GENNL_SOCKET_H
+
+extern int gennl_socket;
+
+#endif
 
 void gennl_server_init();
 

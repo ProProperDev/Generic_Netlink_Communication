@@ -22,7 +22,12 @@
 extern struct sockaddr_nl sender_addr;
 
 static struct sockaddr_nl client_addr = {0};
-int client_gennl_socket;
+#ifndef CLIENT_GENNL_SOCKET_H
+#define CLIENT_GENNL_SOCKET_H
+
+extern int client_gennl_socket;
+
+#endif
 
 void gennl_client_init();
 
