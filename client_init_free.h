@@ -28,4 +28,6 @@ void gennl_client_init();
 
 int create_and_bind_client_socket();
 
+int read_server_infofile();
+
 void gennl_client_free();

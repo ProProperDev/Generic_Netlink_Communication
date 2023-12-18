@@ -1,5 +1,7 @@
 #pragma once
 
+#define _GNU_SOURCE
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
@@ -15,6 +17,7 @@
 
 #include "server_init.h"
 #include "calc_functions.h"
+#include "request_processing.h"
 
 #ifndef INCORRECT_VALUE
 #define INCORRECT_VALUE -1
