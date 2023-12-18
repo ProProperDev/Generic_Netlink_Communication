@@ -8,7 +8,7 @@ Simple implementation of client-server applications from user space to user spac
 { "result": 3 }
 # Порядок решения и вывод программ
 1. Клонируем репозиторий  \
-`$ git clone https://github.com/ProProperDev/Generic_Netlink_Communication`  \
+`$ git clone https://github.com/ProProperDev/Generic_Netlink_Communication`
 2. Собираем проект  \
 `$ make`
 3. Сначала запускаем приложение сервера, затем в соседнем терминале приложение клиента и перенаправляем в него поток из файла с тестовыми запросами \
